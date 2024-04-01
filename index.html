@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Livros</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="js/index.js" ></script>
+</head>
+<body>
+    <header>
+        <div id="cabecalho">
+            <div>
+                <img id="logo" src="images/livros.png" alt="estante de livros">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><img class="menu2" src="images/heart_2107952.png" alt="coracao"></li>
+                    <li><img class="menu2" src="images/16744398191571183082-512.png" alt="sacola de compras"></li>
+                    <li><img class="menu2" src="images/19339625881548233621-512.png" alt="perfil do usuário"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h3 id="bem-vindo">Bem vindo ao Tudo Livros</h3>
+    <div class="flex-container">
+        <div><a href="#romances">Romances</a></div>
+        <div><a href="#hqs">HQs</a></div>
+        <div><a href="#mangas">Mangás</a></div>
+        <div><a href="#mais_buscados">Mais Buscados</a></div>
+        <div><a href="#ficcao">Ficção</a></div>
+    </div>
+    <br>
+    <h3 id="mais_buscados" >Mais Buscados</h3>
+    <section>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img id="imagem-card-1" src="images/16643869266334876e5f51e_1664386926_3x2_md.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 29,00</p>
+                        <img id="like1" class="heart" onclick="trocaImagem()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+            <div class="grid-item">
+                <img id="imagem-card-2" src="images/61IY5VQI69L._AC_UF1000,1000_QL80_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 29,00</p>
+                        <img id="like2" class="heart" onclick="trocaImagem2()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+            <div class="grid-item">
+                <img id="imagem-card-3" src="images/61J43V72F7L._AC_UF1000,1000_QL80_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 29,00</p>
+                        <img id="like3" class="heart" onclick="trocaImagem3()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>  
+            <div class="grid-item">
+                <img id="imagem-card-4" src="images/Batwoman-Medo-e-Aversão-no-País-das-Maravilhas-capa-666x1024.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 19,00</p>
+                        <img id="like4" class="heart" onclick="trocaImagem4()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+        </div>
+    </section>
+    <br>
+    <h3 id="hqs" >HQ's</h3>
+    <section>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img id="imagem-card-5" src="images/81IOAiyRD+L._AC_UF1000,1000_QL80_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 99,00</p>
+                        <img id="like5" class="heart" onclick="trocaImagem5()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+            <div class="grid-item">
+                <img id="imagem-card-6" src="images/-S897-F.png">
+                <div>
+                    <div id="info">
+                        <p>R$ 20,00</p>
+                        <img id="like6" class="heart" onclick="trocaImagem6()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+            <div class="grid-item">
+                <img id="imagem-card-7" src="images/71UJPjpPk7L._AC_UF894,1000_QL80_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 20,00</p>
+                        <img id="like7" class="heart" onclick="trocaImagem7()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>  
+            <div class="grid-item">
+                <img id="imagem-card-8" src="images/Batwoman-Medo-e-Aversão-no-País-das-Maravilhas-capa-666x1024.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 19,00</p>
+                        <img id="like8" class="heart" onclick="trocaImagem8()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+        </div>
+    </section>
+    <br>
+    <h3 id="mangas" >Mangás</h3>
+    <section>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img id="imagem-card-9" src="images/61JBs8YYr4L._SL1462_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 15,00</p>
+                        <img id="like9" class="heart" onclick="trocaImagem9()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+            <div class="grid-item">
+                <img id="imagem-card-10" src="images/6175PH7eGwL._SL1000_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 40,00</p>
+                        <img id="like10" class="heart" onclick="trocaImagem10()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+            <div class="grid-item">
+                <img id="imagem-card-11" src="images/81TmHlRleJL._AC_UF1000,1000_QL80_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 20,00</p>
+                        <img id="like11" class="heart" onclick="trocaImagem11()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>  
+            <div class="grid-item">
+                <img id="imagem-card-12" src="images/71IIA44vw1L._AC_UF1000,1000_QL80_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 20,00</p>
+                        <img id="like12" class="heart" onclick="trocaImagem12()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+        </div>
+    </section>
+    <br>
+    <h3 id="ficcao" >Ficção</h3>
+    <section>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img id="imagem-card-13" src="images/81zN7udGRUL._SL1500_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 69,00</p>
+                        <img id="like13" class="heart" onclick="trocaImagem13()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+            <div class="grid-item">
+                <img id="imagem-card-14" src="images/61tWC0pqJEL._SL1500_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 29,00</p>
+                        <img id="like14" class="heart" onclick="trocaImagem14()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+            <div class="grid-item">
+                <img id="imagem-card-15" src="images/81eDqX4-H2L._SL1500_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 29,00</p>
+                        <img id="like15" class="heart" onclick="trocaImagem15()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>  
+            <div class="grid-item">
+                <img id="imagem-card-16" src="images/91r3rBPFgcS._SL1500_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 29,00</p>
+                        <img id="like16" class="heart" onclick="trocaImagem16()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+        </div>
+    </section>
+    <br>
+    <h3 id="romances" >Romances</h3>
+    <section>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img id="imagem-card-17" src="images/16643869266334876e5f51e_1664386926_3x2_md.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 29,00</p>
+                        <img id="like17" class="heart" onclick="trocaImagem17()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+            <div class="grid-item">
+                <img id="imagem-card-18" src="images/61IY5VQI69L._AC_UF1000,1000_QL80_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 29,00</p>
+                        <img id="like18" class="heart" onclick="trocaImagem18()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+            <div class="grid-item">
+                <img id="imagem-card-19" src="images/71FFLyJ5uyL._AC_UF1000,1000_QL80_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 29,00</p>
+                        <img id="like19" class="heart" onclick="trocaImagem19()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>  
+            <div class="grid-item">
+                <img id="imagem-card-20" src="images/51M9IbBqxCL._AC_UF1000,1000_QL80_.jpg">
+                <div>
+                    <div id="info">
+                        <p>R$ 29,00</p>
+                        <img id="like20" class="heart" onclick="trocaImagem20()" src="images/heart_2107952.png" >
+                    </div>
+                </div>
+                <h3>Comprar</h3>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h5>  &copy;2024 - Juliana Moreira</h5>
+            <a href="https://github.com/cjomode">github</a>
+        </div>
+    </footer>
+</body>
+</html>
