@@ -45,8 +45,14 @@ section #info{
 
 .dark-mode {
     background-color: rgb(32, 24, 51);
-    
+}
 
+.dark-mode2{
+    color: aliceblue;
+}
+
+.dark-mode3{
+    color: crimson ;
 }
 
 #cabecalho nav li a {

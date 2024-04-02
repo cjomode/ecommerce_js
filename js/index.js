@@ -21,6 +21,16 @@ function mudarTema() {
     var element = document.body;
     element.classList.toggle("dark-mode");
 
+    var image = document.getElementById('tema');
+
+    if (imagem1) {
+        image.src = "images/6534293091548329951-512.png";
+    } else {
+        image.src = "images/7546751211548329622-512.png";
+    }
+
+    imagem1 = !imagem1;
+
 }
     
 
