@@ -41,6 +41,14 @@ section #info{
     justify-content: space-between;
 }
 
+/* switch */
+
+.dark-mode {
+    background-color: rgb(32, 24, 51);
+    
+
+}
+
 #cabecalho nav li a {
     font-size: 20px;
     padding: 10px 20px ;
