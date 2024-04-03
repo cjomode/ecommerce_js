@@ -4,6 +4,7 @@
 body{
     background-color: rgb(189, 176, 199);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.5s ease;
 }
 
 ul{
@@ -31,8 +32,8 @@ div .menu {
     padding-right: 9px;
 }
 .menu2 {
-    width: 35px;
-    padding-right: 30px;
+    width: 30px;
+    padding-right: 18px;
     cursor: pointer;
 }
 
@@ -42,17 +43,32 @@ section #info{
 }
 
 /* switch */
+#tema{
+    width: 18px;
+    height: 18px;
+    padding-top: 8px;
+}
 
 .dark-mode {
     background-color: rgb(32, 24, 51);
+    transition: 0.5s;
 }
 
-.dark-mode2{
-    color: aliceblue;
+.dark-mode h3{
+    color: white;
+    transition: 0.5s ease;
 }
 
-.dark-mode3{
-    color: crimson ;
+.dark-mode a{
+    color: white;
+}
+
+.dark-mode .flex-container div{
+    background-color: rgb(38, 29, 59) ;
+}
+
+.dark-mode footer{
+    background-color: rgb(170, 170, 170) ;
 }
 
 #cabecalho nav li a {
@@ -135,7 +151,6 @@ a{
     cursor: pointer;
 }
 
-
 .grid-item img{
     width: 205px;
 } 
@@ -199,8 +214,32 @@ a{
     transform: scale(1.1)
 }
 
-footer div{ 
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
+/* footer */
+
+footer {
+    text-align: center;
+    background-color: rgb(232, 212, 252);
+    padding: 20px 0;
+}
+
+.footer h4 {
+    margin-bottom: 12px;
+}
+
+.footer ul {
+    padding: 0;
+    justify-content: center;
+}
+
+.footer ul li {
+    margin: 0 10px;
+}
+
+.social {
+    width: 25px;
+    height: 25px;
+}
+
+.footer h5 {
+    margin-top: 12px;
 }

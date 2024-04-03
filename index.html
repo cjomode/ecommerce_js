@@ -23,22 +23,21 @@
             </div>
             <nav class="menu">
                 <ul>
-                    <li><img class="menu2" src="images/heart_2107952.png" alt="coracao"></li>
-                    <li><img class="menu2" src="images/16744398191571183082-512.png" alt="sacola de compras"></li>
-                    <li><img class="menu2" src="images/19339625881548233621-512.png" alt="perfil do usuário"></li>
-                    <li><img id="tema" class="menu2" src="images/7546751211548329622-512.png" alt="botao alterar tema" onclick="mudarTema()"></li>
+                    <li><img id="coracao_menu" class="menu2" src="images/coracao.png" alt="coracao"></li>
+                    <li><img id="compras_menu" class="menu2" src="images/vista-lateral-vazia-do-carrinho-de-compras.png" alt="sacola de compras"></li>
+                    <li><img id="perfil_menu" class="menu2" src="images/perfil-de-usuario.png" alt="perfil do usuário"></li>
+                    <li><img  class="menu2" id="tema" src="images/lua.png" alt="botao alterar tema" onclick="mudarTema()"></li>
                 </ul>
             </nav>
         </div>
     </header>
     <h3 id="bem-vindo">Bem vindo ao Tudo Livros</h3>
     <div class="flex-container">
-        <div><a href="#romances">Romances</a></div>
+        <div><a href="#mais_buscados">Mais Buscados</a></div>
         <div><a href="#hqs">HQs</a></div>
         <div><a href="#mangas">Mangás</a></div>
-        <div><a href="#mais_buscados">Mais Buscados</a></div>
         <div><a href="#ficcao">Ficção</a></div>
-
+        <div><a href="#romances">Romances</a></div>
     </div>
     <br>
     <h3 id="mais_buscados" >Mais Buscados</h3>
@@ -49,7 +48,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 29,00</p>
-                        <img id="like1" class="heart" onclick="trocaImagem()" src="images/heart_2107952.png" >
+                        <img id="like1" class="heart" onclick="trocaImagem('like1')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -59,7 +58,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 29,00</p>
-                        <img id="like2" class="heart" onclick="trocaImagem2()" src="images/heart_2107952.png" >
+                        <img id="like2" class="heart" onclick="trocaImagem('like2')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -69,7 +68,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 29,00</p>
-                        <img id="like3" class="heart" onclick="trocaImagem3()" src="images/heart_2107952.png" >
+                        <img id="like3" class="heart" onclick="trocaImagem('like3')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -79,7 +78,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 19,00</p>
-                        <img id="like4" class="heart" onclick="trocaImagem4()" src="images/heart_2107952.png" >
+                        <img id="like4" class="heart" onclick="trocaImagem('like4')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -95,7 +94,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 99,00</p>
-                        <img id="like5" class="heart" onclick="trocaImagem5()" src="images/heart_2107952.png" >
+                        <img id="like5" class="heart" onclick="trocaImagem('like5')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -105,7 +104,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 20,00</p>
-                        <img id="like6" class="heart" onclick="trocaImagem6()" src="images/heart_2107952.png" >
+                        <img id="like6" class="heart" onclick="trocaImagem('like6')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -115,7 +114,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 20,00</p>
-                        <img id="like7" class="heart" onclick="trocaImagem7()" src="images/heart_2107952.png" >
+                        <img id="like7" class="heart" onclick="trocaImagem('like7')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -125,7 +124,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 19,00</p>
-                        <img id="like8" class="heart" onclick="trocaImagem8()" src="images/heart_2107952.png" >
+                        <img id="like8" class="heart" onclick="trocaImagem('like8')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -141,7 +140,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 15,00</p>
-                        <img id="like9" class="heart" onclick="trocaImagem9()" src="images/heart_2107952.png" >
+                        <img id="like9" class="heart" onclick="trocaImagem('like9')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -151,7 +150,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 40,00</p>
-                        <img id="like10" class="heart" onclick="trocaImagem10()" src="images/heart_2107952.png" >
+                        <img id="like10" class="heart" onclick="trocaImagem('like10')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -161,7 +160,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 20,00</p>
-                        <img id="like11" class="heart" onclick="trocaImagem11()" src="images/heart_2107952.png" >
+                        <img id="like11" class="heart" onclick="trocaImagem('like11')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -171,7 +170,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 20,00</p>
-                        <img id="like12" class="heart" onclick="trocaImagem12()" src="images/heart_2107952.png" >
+                        <img id="like12" class="heart" onclick="trocaImagem('like12')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -187,7 +186,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 69,00</p>
-                        <img id="like13" class="heart" onclick="trocaImagem13()" src="images/heart_2107952.png" >
+                        <img id="like13" class="heart" onclick="trocaImagem('like13')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -197,7 +196,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 29,00</p>
-                        <img id="like14" class="heart" onclick="trocaImagem14()" src="images/heart_2107952.png" >
+                        <img id="like14" class="heart" onclick="trocaImagem('like14')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -207,7 +206,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 29,00</p>
-                        <img id="like15" class="heart" onclick="trocaImagem15()" src="images/heart_2107952.png" >
+                        <img id="like15" class="heart" onclick="trocaImagem('like15')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -217,7 +216,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 29,00</p>
-                        <img id="like16" class="heart" onclick="trocaImagem16()" src="images/heart_2107952.png" >
+                        <img id="like16" class="heart" onclick="trocaImagem('like16')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -233,7 +232,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 29,00</p>
-                        <img id="like17" class="heart" onclick="trocaImagem17()" src="images/heart_2107952.png" >
+                        <img id="like17" class="heart" onclick="trocaImagem('like17')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -243,7 +242,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 29,00</p>
-                        <img id="like18" class="heart" onclick="trocaImagem18()" src="images/heart_2107952.png" >
+                        <img id="like18" class="heart" onclick="trocaImagem('like18')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -253,7 +252,7 @@
                 <div>
                     <div id="info">
                         <p>R$ 29,00</p>
-                        <img id="like19" class="heart" onclick="trocaImagem19()" src="images/heart_2107952.png" >
+                        <img id="like19" class="heart" onclick="trocaImagem('like19')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
@@ -263,17 +262,26 @@
                 <div>
                     <div id="info">
                         <p>R$ 29,00</p>
-                        <img id="like20" class="heart" onclick="trocaImagem20()" src="images/heart_2107952.png" >
+                        <img id="like20" class="heart" onclick="trocaImagem('like20')" src="images/heart_2107952.png" >
                     </div>
                 </div>
                 <h3>Comprar</h3>
             </div>
         </div>
     </section>
+    <br>
+    <br>
     <footer>
         <div>
-            <h5>  &copy;2024 - Juliana Moreira</h5>
-            <a href="https://github.com/cjomode">github</a>
+            <div class="footer">
+                <h4>Siga nossas redes</h4>
+                <ul>
+                    <li><img class="social" src="images/github.png"></li>
+                    <li><img class="social" src="images/instagram.png" ></li>
+                    <li><img class="social" src="images/twitter.png" ></li>
+                </ul>
+                <h5>&copy;2024 - Juliana Moreira</h5>
+            </div>
         </div>
     </footer>
 </body>
