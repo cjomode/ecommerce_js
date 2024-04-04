@@ -39,8 +39,6 @@ function mudarTema() {
 
 }
 
-// botão_like
-
 function trocaImagem(id) {
     var image = document.getElementById(id);
 
@@ -49,4 +47,20 @@ function trocaImagem(id) {
     } else {
         image.src = "images/heart_2107774.png";
     }
+}
+
+var total = 0;
+
+function addCarrinho(preco) {
+
+    var c = confirm("Você adicionou R$ " + preco.toFixed(2) + "\nAperte OK para confirmar");
+
+    if (c) {
+        total += preco;
+        alert('Item adicionado ao carrinho!');
+    }
+}
+
+function totalCompra() {
+    alert('O valor total da sua compra é R$: ' + total.toFixed(2));
 }

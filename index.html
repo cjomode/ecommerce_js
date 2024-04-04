@@ -24,7 +24,7 @@
             <nav class="menu">
                 <ul>
                     <li><img id="coracao_menu" class="menu2" src="images/coracao.png" alt="coracao"></li>
-                    <li><img id="compras_menu" class="menu2" src="images/vista-lateral-vazia-do-carrinho-de-compras.png" alt="sacola de compras"></li>
+                    <li><img id="compras_menu" class="menu2" src="images/vista-lateral-vazia-do-carrinho-de-compras.png" alt="sacola de compras" onclick="totalCompra()"></li>
                     <li><img id="perfil_menu" class="menu2" src="images/perfil-de-usuario.png" alt="perfil do usuário"></li>
                     <li><img  class="menu2" id="tema" src="images/lua.png" alt="botao alterar tema" onclick="mudarTema()"></li>
                 </ul>
@@ -47,21 +47,21 @@
                 <img id="imagem-card-1" src="images/16643869266334876e5f51e_1664386926_3x2_md.jpg">
                 <div>
                     <div id="info">
-                        <p>R$ 29,00</p>
+                        <p id="preco-produto-1" >R$ 29,00</p>
                         <img id="like1" class="heart" onclick="trocaImagem('like1')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(29)" a>Comprar</h3>
             </div>
             <div class="grid-item">
                 <img id="imagem-card-2" src="images/61IY5VQI69L._AC_UF1000,1000_QL80_.jpg">
                 <div>
                     <div id="info">
-                        <p>R$ 29,00</p>
+                        <p id="preco-produto-2" >R$ 29,00</p>
                         <img id="like2" class="heart" onclick="trocaImagem('like2')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(29)">Comprar</h3>
             </div>
             <div class="grid-item">
                 <img id="imagem-card-3" src="images/61J43V72F7L._AC_UF1000,1000_QL80_.jpg">
@@ -71,7 +71,7 @@
                         <img id="like3" class="heart" onclick="trocaImagem('like3')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(29)">Comprar</h3>
             </div>  
             <div class="grid-item">
                 <img id="imagem-card-4" src="images/Batwoman-Medo-e-Aversão-no-País-das-Maravilhas-capa-666x1024.jpg">
@@ -81,7 +81,7 @@
                         <img id="like4" class="heart" onclick="trocaImagem('like4')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(19)">Comprar</h3>
             </div>
         </div>
     </section>
@@ -97,7 +97,7 @@
                         <img id="like5" class="heart" onclick="trocaImagem('like5')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(99)">Comprar</h3>
             </div>
             <div class="grid-item">
                 <img id="imagem-card-6" src="images/-S897-F.png">
@@ -107,7 +107,7 @@
                         <img id="like6" class="heart" onclick="trocaImagem('like6')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(20)">Comprar</h3>
             </div>
             <div class="grid-item">
                 <img id="imagem-card-7" src="images/71UJPjpPk7L._AC_UF894,1000_QL80_.jpg">
@@ -117,7 +117,7 @@
                         <img id="like7" class="heart" onclick="trocaImagem('like7')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(20)">Comprar</h3>
             </div>  
             <div class="grid-item">
                 <img id="imagem-card-8" src="images/Batwoman-Medo-e-Aversão-no-País-das-Maravilhas-capa-666x1024.jpg">
@@ -127,7 +127,7 @@
                         <img id="like8" class="heart" onclick="trocaImagem('like8')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(19)">Comprar</h3>
             </div>
         </div>
     </section>
@@ -143,7 +143,7 @@
                         <img id="like9" class="heart" onclick="trocaImagem('like9')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(15)">Comprar</h3>
             </div>
             <div class="grid-item">
                 <img id="imagem-card-10" src="images/6175PH7eGwL._SL1000_.jpg">
@@ -153,7 +153,7 @@
                         <img id="like10" class="heart" onclick="trocaImagem('like10')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(40)">Comprar</h3>
             </div>
             <div class="grid-item">
                 <img id="imagem-card-11" src="images/81TmHlRleJL._AC_UF1000,1000_QL80_.jpg">
@@ -163,7 +163,7 @@
                         <img id="like11" class="heart" onclick="trocaImagem('like11')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(20)">Comprar</h3>
             </div>  
             <div class="grid-item">
                 <img id="imagem-card-12" src="images/71IIA44vw1L._AC_UF1000,1000_QL80_.jpg">
@@ -173,7 +173,7 @@
                         <img id="like12" class="heart" onclick="trocaImagem('like12')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(20)">Comprar</h3>
             </div>
         </div>
     </section>
@@ -189,7 +189,7 @@
                         <img id="like13" class="heart" onclick="trocaImagem('like13')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(69)">Comprar</h3>
             </div>
             <div class="grid-item">
                 <img id="imagem-card-14" src="images/61tWC0pqJEL._SL1500_.jpg">
@@ -199,7 +199,7 @@
                         <img id="like14" class="heart" onclick="trocaImagem('like14')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(29)">Comprar</h3>
             </div>
             <div class="grid-item">
                 <img id="imagem-card-15" src="images/81eDqX4-H2L._SL1500_.jpg">
@@ -209,7 +209,7 @@
                         <img id="like15" class="heart" onclick="trocaImagem('like15')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(29)">Comprar</h3>
             </div>  
             <div class="grid-item">
                 <img id="imagem-card-16" src="images/91r3rBPFgcS._SL1500_.jpg">
@@ -219,7 +219,7 @@
                         <img id="like16" class="heart" onclick="trocaImagem('like16')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(29)">Comprar</h3>
             </div>
         </div>
     </section>
@@ -235,7 +235,7 @@
                         <img id="like17" class="heart" onclick="trocaImagem('like17')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(29)">Comprar</h3>
             </div>
             <div class="grid-item">
                 <img id="imagem-card-18" src="images/61IY5VQI69L._AC_UF1000,1000_QL80_.jpg">
@@ -245,7 +245,7 @@
                         <img id="like18" class="heart" onclick="trocaImagem('like18')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(29)">Comprar</h3>
             </div>
             <div class="grid-item">
                 <img id="imagem-card-19" src="images/71FFLyJ5uyL._AC_UF1000,1000_QL80_.jpg">
@@ -255,7 +255,7 @@
                         <img id="like19" class="heart" onclick="trocaImagem('like19')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(29)">Comprar</h3>
             </div>  
             <div class="grid-item">
                 <img id="imagem-card-20" src="images/51M9IbBqxCL._AC_UF1000,1000_QL80_.jpg">
@@ -265,7 +265,7 @@
                         <img id="like20" class="heart" onclick="trocaImagem('like20')" src="images/heart_2107952.png" >
                     </div>
                 </div>
-                <h3>Comprar</h3>
+                <h3 class="botaoCompra" onclick="addCarrinho(29)">Comprar</h3>
             </div>
         </div>
     </section>
